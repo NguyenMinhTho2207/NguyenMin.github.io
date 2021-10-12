@@ -1,0 +1,74 @@
+@media(max-width:740px){
+    .s-col-full{
+        width: 100% !important;
+    }
+    .s-full-width{
+        width: 100% !important;
+    }
+    .s-mt-8{
+        margin-top: 8px;
+
+    }
+    #nav >li{
+        display: block;
+    }
+    #header{
+        overflow: hidden;
+    }   
+    #header .search{
+        display: none;
+    }
+    #header .moblie-menu-btn{
+        display: block;
+    }
+    #nav >li:first-child{
+        display: inline-block;
+    }
+    #nav .subnav{
+        position: initial;
+        background-color: #333;
+    }
+    
+    #nav .subnav li a{
+        padding: 10px 48px;
+        color: #fff;
+    }
+    #content .member-img{
+        width: 60%;
+    }
+    
+    .contact-form{
+        margin-top: 16px;
+    }
+}
+/* tablet */
+ @media(min-width:741px) and (max-width:1023px){
+    
+
+
+}
+/* tablet and moblie */
+ @media(max-width:1023px){
+    #content .buy-ticker{
+        padding: 15px 16px;
+        text-align: center;
+    }
+    .contact-form .form-control {
+        padding: 15px;
+    }
+    .contact-form .contact-submit-btn{
+        padding: 16px 16px;
+    }
+    .contact-info {
+        line-height: 2;
+    }
+    #footer .socials-list {
+        font-size: 42px;
+    }
+    #footer .socials-list a{
+        margin-left: 8px;
+    }
+    #footer .coppyright a {
+        font-size: 24px;
+    }
+}  

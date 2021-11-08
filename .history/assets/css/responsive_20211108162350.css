@@ -1,0 +1,210 @@
+/* moblie and tablet */
+@media (max-width:1023px){
+    :root{
+        --header-height:70px;
+        --navbar-height:0px;
+        --nav-table-height:60px;
+    }
+    
+    .hide-on-tablet-moblie{
+        display: none;
+    }
+    .header{
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 11;
+    }
+    .header__cart-list{
+        position: fixed;
+        width: 100%;
+        top: var(--header-height);
+        z-index: 5;
+    }
+    .header__cart-list::before{
+        display: none;
+    }
+    .container{
+        margin-top: calc(var(--header-height) + var(--nav-table-height));
+
+    }
+
+    
+
+    .nav-tablet-list{
+        margin: 0;
+        display: flex;
+        position: fixed;
+        top: var(--header-height);
+        right: 0;
+        left: 0;
+        height: var(--nav-table-height);
+        z-index: 1;
+        background-color: #fff;
+        list-style: none;
+        padding-left: 0;
+        
+    }
+
+    .nav-tablet-item{
+        flex: 1;
+    }
+
+    .nav-tablet-item__link{
+        display: block;
+        line-height: var(--nav-table-height);
+        text-align: center;
+        position: relative;
+        text-decoration: none;
+        color: var(--text-color);
+        font-size: 1.4rem;
+    }
+
+    .nav-tablet-item__link::before{
+        content: "";
+        display: block;
+        height: 50%;
+        position: absolute;
+        top: 50%;
+        border: 1px solid #ccc;
+        transform: translateY(-50%);
+    }
+    .nav-tablet-item:first-child .nav-tablet-item__link::before{
+        display: none;
+    }
+   
+}
+
+/* tablet */
+@media(min-width:740px) and (max-width:1023px){
+    .hide-on-tablet{
+        display: none;
+    }.header__logo{
+        width: 120px;
+    }
+    .header__logo-img {
+        width: 100px;
+    
+    }
+    .header__cart {
+        width: 75px;
+    }
+    .header__search-select {
+        padding: 8px 10px;
+    }
+    .nav-tablet{
+        background-color: #fff;
+        border: 1px solid var(--border-color);
+    }
+    .nav-tablet-list{
+        list-style: none;
+        
+    }
+    .nav-tablet-item__link{
+        text-decoration: none;
+        color:var(--text-color);
+        font-size: 1.6rem;
+        display: block;
+    }
+    .header__search-history,
+    .header__search-option{
+        z-index: 2;
+    }
+   
+}
+/* moblie */
+@media(max-width:739px){
+    .hide-on-moblie{
+        display: none;
+    }
+    .header__logo-search-icon{
+        font-size: 26px;
+        color: var(--white-color);
+    }
+    .header-with-search{
+        display: flex;
+        justify-content: space-between;
+        
+    }
+    
+    .header__cart,
+    .header__logo{
+        width: unset;
+    }
+    .header__logo-search{
+        padding: 0 8px;
+        display: block;
+    }
+    .header__search {
+        position: fixed;
+        top: var(--header-height);
+        font-size: 1.6rem;
+        left: 0;
+        z-index: 2;
+        right: 0;
+        height: var(--nav-table-height);
+        animation: moblieSearchSadeIn ease-in 0.3s;
+        display: none;
+    }
+    .header__search-go{
+        font-size: 1.6rem;
+    }
+    .header__search-history{
+        position: fixed;
+        top: calc(var(--header-height) + var(--nav-table-height));
+        left: 0;
+        width: 100%;
+    }
+    .home-product__pagination{
+        padding-left: 0;
+    }
+
+    @keyframes moblieSearchSadeIn {
+        from{
+            opacity: 0;
+            top: calc(var(--header-height)/2);
+        }
+        to{
+            opacity: 1;
+            top: var(--header-height);
+
+        }
+    }
+    .header__checkbox-input:checked ~ .header__search{
+        display: flex;
+    }
+    .pagination-item__link{
+        min-width: 40px;
+        --height: 28px;
+    }
+    .pagination-item{
+        margin: 0 1px;
+    }
+    .moblie-category{
+
+    }
+    .moblie-category__list{
+        list-style: none;
+        display: flex;
+        padding-left: 0;
+        max-width: 100%;
+        overflow-x: auto;
+    }
+
+    .moblie-category__item{
+       flex-shrink: 0;
+    }
+
+    .moblie-category__link{
+        text-decoration: none;
+        display: block;
+        font-size: 1.4rem;
+        text-align: center;
+        /* color: var(--white-color); */
+        line-height: 2rem;
+        
+    }
+
+    
+}

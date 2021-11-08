@@ -1,5 +1,5 @@
 #main{
-    overflow: hidden;
+    overflow: auto;
 }
 .header{
 background-image: linear-gradient(#f7462e,#fe6032);
@@ -1166,7 +1166,6 @@ margin-top: 88px;
     color: var(--primary-color);
 }
 /* moblie */
-.moblie-category__list,
 .header__logo-search{
     display: none;
     

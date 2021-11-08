@@ -1166,12 +1166,13 @@ margin-top: 88px;
     color: var(--primary-color);
 }
 /* moblie */
-.moblie-category__list,
 .header__logo-search{
     display: none;
     
 }
-
+.nav-tablet-list{
+    display: none;
+}
 /* tablet */
 .nav-tablet-list{
     display: none;

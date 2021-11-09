@@ -258,12 +258,12 @@
         display: flex;
     }
     .moblie-footer{
-        padding-left: 16px;
+        padding-left: 32px;
     }
     .footer__heading{
         text-align: center;
     }
-    .footer-item{
+    .footer-list{
         text-align: center;
     }
     .footer__download{

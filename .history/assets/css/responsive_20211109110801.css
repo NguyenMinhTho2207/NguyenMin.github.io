@@ -258,15 +258,6 @@
         display: flex;
     }
     .moblie-footer{
-        padding-left: 32px;
-    }
-    .footer__heading{
-        text-align: center;
-    }
-    .footer__download{
-        justify-content: center;
-    }
-    .footer__dowload-app-link{
-        padding: 8px;
+        margin-left: 16px;
     }
 }

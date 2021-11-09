@@ -1014,8 +1014,8 @@ i.home-product-item__like-icon-fill{
     padding-bottom: 36px;
 }
 .footer-sub__row{
-    display: flex;
     justify-content: center;
+    display: none;
 }
 
 .footer-sub__heading{

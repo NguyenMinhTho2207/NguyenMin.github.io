@@ -183,9 +183,6 @@
     .header__cart-icon{
         -webkit-tap-highlight-color: transparent;
     }
-    .header__logo-img {
-        width: 120px;
-    }
     .pagination-item__link{
         min-width: 40px;
         --height: 28px;
@@ -256,17 +253,5 @@
     }
     .nav-tablet-item__success:checked ~ .moblie-category__list{
         display: flex;
-    }
-    .moblie-footer{
-        padding-left: 32px;
-    }
-    .footer__heading{
-        text-align: center;
-    }
-    .footer__download{
-        justify-content: center;
-    }
-    .footer__dowload-app-link{
-        padding: 8px;
     }
 }

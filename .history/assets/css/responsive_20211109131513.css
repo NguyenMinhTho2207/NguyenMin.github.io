@@ -260,13 +260,8 @@
     .moblie-footer{
         padding-left: 32px;
     }
-    .footer__heading{
-        text-align: center;
-    }
+    .footer__heading,
     .footer__download{
-        justify-content: center;
-    }
-    .footer__dowload-app-link{
-        padding: 8px;
+        text-align: center;
     }
 }
